@@ -48,9 +48,17 @@ export default function Accordian() {
                 <h3>{item.question}</h3>
                 <span>+</span>
               </div>
-              {selected === item.id && (
+              {enableMultipleSelection
+                ? multiple.indexOf(item.id) !== -1 && (
+                    <div className="acc-content ">{item.answer}</div>
+                  )
+                : selected === item.id && (
+                    <div className="acc-content ">{item.answer}</div>
+                  )}
+              {/* {selected === item.id ||
+              multiple.indexOf(item.id) !== -1 ? (
                 <div className="content">{item.answer}</div>
-              )}
+              ) : null} */}
             </div>
           ))
         ) : (
