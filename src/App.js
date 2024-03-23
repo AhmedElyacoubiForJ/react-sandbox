@@ -1,10 +1,13 @@
-import './App.css';
-import UseMemoExample from './components/UseMemoExample';
+//import UseCallbackExample from "./components/UseCallbackExample";
+import Accordian from "./components/accordian";
 
 function App() {
   return (
-    <div className="container mt-5">
-      <UseMemoExample />
+    <div style={{ background: "gray" }}>
+      {/* <UseCallbackExample /> */}
+
+      {/* Accordian component */}
+      <Accordian />
     </div>
   );
 }
