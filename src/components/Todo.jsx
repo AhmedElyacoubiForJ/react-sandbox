@@ -4,28 +4,50 @@ function Todo() {
   const [loading, setLoading] = useState(true);
   const [todo, setTodo] = useState({});
 
+  const isMounted = useRef(false);
+
   useEffect(() => {
-    const controller = new AbortController();
+    isMounted.current = true;
+    console.log("MyTodo is mounted")
+    return () => {
+      console.log("MyTodo is unmounted")
+      isMounted.current = false;
+    }
 
-    fetch("https://jsonplaceholder.typicode.com/todos/1", {
-      signal: controller.signal,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setTimeout(() => {
-          setTodo(data);
-          setLoading(false);
-        }, 3000);
-      })
-      .catch((e) => {
-        return () => {
-          console.log("Unmounting Todo");
-          controller.abort();
-        };
-      });
-  }, []);
+   }, []);
 
-  return loading ? <h3>Loading...</h3> : <h1>{todo.title}</h1>;
+  return (
+    <>
+      {loading ? <h3>Loading...</h3> : <h1>{todo.title}</h1>}
+    </>
+  );
 }
 
 export default Todo;
+
+
+
+
+
+// const controller = new AbortController();
+
+// // fetch("https://jsonplaceholder.typicode.com/todos/1", {
+// //   signal: controller.signal,
+// // })
+// fetch("https://jsonplaceholder.typicode.com/todos/1")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     setTimeout(() => {
+//       if (isMounted.current) {
+//       setTodo(data);
+//       setLoading(false);
+//       }
+//     }, 3000);
+//   });
+ 
+// if (divRef.current === null || divRef.current === undefined) {
+//   isMounted.current = false;
+//   console.log("Unmounting Todo");
+// }
+
+
