@@ -13,10 +13,10 @@ function UseRefExample1() {
     e.preventDefault();
     console.log(inputRef.current.value);
     inputRef.current.value = "Hello, World!";
-   
+
     inputRef.current.style.backgroundColor = "red";
     paragraphRef.current.innerText = "Goodbye!";
-  }
+  };
   return (
     <div>
       <form onSubmit={onSubmit}>
@@ -30,7 +30,11 @@ function UseRefExample1() {
         <button type="submit" className="btn btn-primary my-4">
           Submit
         </button>
-        <p className="my-4" onClick={() => inputRef.current.focus()} ref={paragraphRef}></p>
+        <p
+          className="my-4"
+          onClick={() => inputRef.current.focus()}
+          ref={paragraphRef}
+        ></p>
       </form>
     </div>
   );
