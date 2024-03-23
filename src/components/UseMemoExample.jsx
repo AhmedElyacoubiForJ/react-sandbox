@@ -7,6 +7,7 @@ function UseMemoExample() {
 
   // the call will happen by each rendering cycle even if the number not changed
   // const sqrt = getSqrt(number);
+  
   // using useMemo hook the call will be happen only if the number has changed
   const sqrt = useMemo(() => getSqrt(number), [number]);
 

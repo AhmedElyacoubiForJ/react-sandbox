@@ -1,13 +1,12 @@
-//import UseCallbackExample from "./components/UseCallbackExample";
-import Accordian from "./components/accordian";
+import UseCallbackExample from "./components/UseCallbackExample";
 
 function App() {
   return (
-    <div style={{ background: "gray" }}>
-      {/* <UseCallbackExample /> */}
+    <div className="container">
+      <UseCallbackExample />
 
       {/* Accordian component */}
-      <Accordian />
+      {/*  <Accordian /> */}
     </div>
   );
 }
