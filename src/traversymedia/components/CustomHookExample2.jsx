@@ -1,5 +1,5 @@
 import useLocalStorage from "../hooks/useLocalStorage";
-
+// TODO: is to how to deal with localStorage for arrays
 function CustomHookExample2() {
   const [task, setTask] = useLocalStorage("task", '');
 
