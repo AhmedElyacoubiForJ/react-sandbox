@@ -1,9 +1,10 @@
-import CustomHookExample1 from "./components/CustomHookExample1";
-
+import CustomHookExample2 from "./traversymedia/components/CustomHookExample2";
 function App() {
   return (
     <div className="container mt-5">
-      <CustomHookExample1 />
+      <CustomHookExample2 />
+
+
       {/* Accordian component */}
       {/*  <Accordian /> */}
     </div>
