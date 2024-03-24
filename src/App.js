@@ -1,8 +1,8 @@
-import CustomHookExample2 from "./traversymedia/components/CustomHookExample2";
+import Accordian from "./freeCodeMapMinis/components/accordian";
+import "./App.css";
 function App() {
   return (
-    <div className="container mt-5">
-      <CustomHookExample2 />
+    <div className="App">
 
 
       {/* Accordian component */}

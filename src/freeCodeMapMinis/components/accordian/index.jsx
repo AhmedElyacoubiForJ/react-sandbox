@@ -17,7 +17,7 @@ export default function Accordian() {
     let copyMultiple = [...multiple];
 
     const findIndexOfCurrentid = copyMultiple.indexOf(currentId);
-    console.log(findIndexOfCurrentid);
+    
     if (findIndexOfCurrentid === -1) {
         copyMultiple.push(currentId);
     } else {
@@ -25,7 +25,7 @@ export default function Accordian() {
     }
     setMultiple(copyMultiple);
   };
-  console.log(selected,multiple);
+  
   return (
     <div className="wrapper">
       <button
