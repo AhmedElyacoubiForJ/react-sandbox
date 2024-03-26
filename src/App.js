@@ -4,6 +4,7 @@ import ImageSlider from "./freeCodeMapMinis/components/image-slider";
 import { LoadMoreData } from "./freeCodeMapMinis/components/load-more-data";
 import RandomColor from "./freeCodeMapMinis/components/random-color";
 import StarRating from "./freeCodeMapMinis/components/start-rating";
+import TreeView from "./freeCodeMapMinis/components/tree-view";
 function App() {
   return (
     <div className="App">
@@ -22,7 +23,10 @@ function App() {
       {/* <ImageSlider url="https://picsum.photos/v2/list" limit={10}/> */}
 
       {/* Load more products component */}
-      <LoadMoreData />
+      {/*  <LoadMoreData /> */}
+
+      {/* Tree view component/menu UI component / recursive navigation menu */}
+      <TreeView />
     </div>
   );
 }
