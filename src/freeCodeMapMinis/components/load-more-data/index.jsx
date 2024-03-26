@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 // without loading the previous 20 again.
 // This continues until we have loaded a maximum of 100 products.
 
-
 // https://dummyjson.com/products?limit=20&skip=0 0 * 20
 // https://dummyjson.com/products?limit=20&skip=20 1 * 20
 // https://dummyjson.com/products?limit=20&skip=40 2 * 20
@@ -19,6 +18,7 @@ export function LoadMoreData() {
   const [errorMsg, setErrorMsg] = useState(null);
   // how many times you are clicking the button
   const [count, setCount] = useState(0);
+  const [disableButton, setDisableButton] = useState(false);
 
   async function fetchProducts() {
     try {
@@ -28,9 +28,12 @@ export function LoadMoreData() {
           count === 0 ? 0 : count * 20
         }`
       );
-      const data = await response.json();
-      setProducts((prevData) => [...prevData, ...data.products]);
-      setCount(count + 1);
+
+      const result = await response.json();
+
+      if (result && result.products && result.products.length) {
+        setProducts((prevData) => [...prevData, ...result.products]);
+      }
     } catch (error) {
       setErrorMsg(error.message);
     } finally {
@@ -40,7 +43,13 @@ export function LoadMoreData() {
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, [count]);
+
+  useEffect(() => {
+    if (products && products.length === 100) {
+      setDisableButton(true);
+    }
+  }, [products]);
 
   if (loading) {
     return <div className="loading">Loading...</div>;
@@ -50,16 +59,30 @@ export function LoadMoreData() {
     return <div className="error-msg">{errorMsg}</div>;
   }
 
-  console.log(products);
+  console.log(count, products);
 
   return (
-    <div>
-      {products.map((item) => (
-        <div className="product" key={item.id}>
-        <img src={item.thumbnail} alt={item.title} />
-        <p>{item.title}</p>
+    <div className="load-more-container">
+      <div className="product-container">
+        {products && products.length
+          ? products.map((product) => {
+              return (
+                <div className="product" key={product.id}>
+                  <img src={product.thumbnail} alter={product.title} />
+                  <p>{product.title} </p>
+                </div>
+              );
+            })
+          : null}
       </div>
-      ))}
+      <div className="button-container">
+        <button disabled={disableButton} onClick={() => setCount(count + 1)}>
+          Load More Products
+        </button>
+        {
+          disableButton ? <p>You have reached 100 products</p> : null
+        }
+      </div>
     </div>
   );
 }
