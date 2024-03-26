@@ -1,4 +1,4 @@
-
+import MenuList from "./menu-list"
 
 
 export default function MenuItem({ item }) {
@@ -9,7 +9,7 @@ export default function MenuItem({ item }) {
         {
             item && item.children && item.children.length > 0 &&
             <ul>
-                {item.children.map((child, index) => <MenuItem key={index} item={child} />)}
+                {item.children.map((child, index) => <MenuList key={index} list={item.children} />)}
             </ul>
         }
     </li>
