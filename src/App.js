@@ -7,6 +7,7 @@ import StarRating from "./freeCodeMapMinis/components/start-rating";
 import TreeView from "./freeCodeMapMinis/components/tree-view";
 import menus from "./freeCodeMapMinis/components/tree-view/data";
 import QRCodeGenarator from "./freeCodeMapMinis/components/qr-code-generator";
+import LightDarkMode from "./freeCodeMapMinis/components/light-dark-mode";
 
 function App() {
   return (
@@ -32,7 +33,10 @@ function App() {
       {/* <TreeView menus= {menus} /> */}
       
       {/* QR code generator */}
-      <QRCodeGenarator />
+      {/* <QRCodeGenarator /> */}
+
+      {/* light and dark theme switcher */}
+      <LightDarkMode />
     </div>
   );
 }
