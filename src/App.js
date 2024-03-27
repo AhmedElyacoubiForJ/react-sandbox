@@ -8,6 +8,8 @@ import TreeView from "./freeCodeMapMinis/components/tree-view";
 import menus from "./freeCodeMapMinis/components/tree-view/data";
 import QRCodeGenarator from "./freeCodeMapMinis/components/qr-code-generator";
 import LightDarkMode from "./freeCodeMapMinis/components/light-dark-mode";
+import FunctionUpdaterExample from "./BroCode/components/updater-functions";
+import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
 
 function App() {
   return (
@@ -36,7 +38,18 @@ function App() {
       {/* <QRCodeGenarator /> */}
 
       {/* light and dark theme switcher */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
+
+
+
+
+
+      {/* Bro Code Examples */}
+      {/* Functions Updater */}
+      {/* <FunctionUpdaterExample /> */}
+
+      {/* Update objects in state */}
+      <UpdateObjectExample />
     </div>
   );
 }
