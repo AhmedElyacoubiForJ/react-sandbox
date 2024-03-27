@@ -6,6 +6,7 @@ import RandomColor from "./freeCodeMapMinis/components/random-color";
 import StarRating from "./freeCodeMapMinis/components/start-rating";
 import TreeView from "./freeCodeMapMinis/components/tree-view";
 import menus from "./freeCodeMapMinis/components/tree-view/data";
+import QRCodeGenarator from "./freeCodeMapMinis/components/qr-code-generator";
 
 function App() {
   return (
@@ -28,7 +29,10 @@ function App() {
       {/*  <LoadMoreData /> */}
 
       {/* Tree view component / menu UI component / recursive navigation menu */}
-      <TreeView menus= {menus} />
+      {/* <TreeView menus= {menus} /> */}
+      
+      {/* QR code generator */}
+      <QRCodeGenarator />
     </div>
   );
 }
