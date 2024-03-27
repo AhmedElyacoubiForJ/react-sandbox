@@ -11,6 +11,7 @@ import LightDarkMode from "./freeCodeMapMinis/components/light-dark-mode";
 import FunctionUpdaterExample from "./BroCode/components/updater-functions";
 import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
 import UpdateArraysExample from "./BroCode/components/update-arrays-in-state";
+import UpdateArrayOfObjects from "./BroCode/components/update-array-of-objects-in-state";
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
       {/* Update arrays in state */}
       {/* <UpdateArraysExample /> */}
 
-      
+      {/* Update array of objects in state */}
+      <UpdateArrayOfObjects />
     </div>
   );
 }
