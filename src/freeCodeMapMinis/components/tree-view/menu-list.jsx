@@ -1,4 +1,4 @@
-import MenuItem from "./menu-item"
+import MenuItem from "./menu-item";
 
 // As a user, I want to be able to navigate through the different
 // sections of the app using the menu.
@@ -15,12 +15,14 @@ import MenuItem from "./menu-item"
 //      . Register
 //        . Random
 // and so we have an menu list.
-export default function MenuList ({list = []}) {
-    return <ul>
-        {
-            list && list.length ? 
-            list.map( (listItem, index) => <MenuItem key={index} item={listItem} />)
-            : null
-        }
+export default function MenuList({ list = [] }) {
+  return (
+    <ul className="menu-list-container">
+      {list && list.length
+        ? list.map((listItem, index) => (
+            <MenuItem key={index} item={listItem} />
+          ))
+        : null}
     </ul>
+  );
 }

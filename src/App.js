@@ -5,7 +5,7 @@ import { LoadMoreData } from "./freeCodeMapMinis/components/load-more-data";
 import RandomColor from "./freeCodeMapMinis/components/random-color";
 import StarRating from "./freeCodeMapMinis/components/start-rating";
 import TreeView from "./freeCodeMapMinis/components/tree-view";
-import menus from "./freeCodeMapMinis/components/tree-view/data.js";
+import menus from "./freeCodeMapMinis/components/tree-view/data";
 
 function App() {
   return (
