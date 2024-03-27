@@ -53,7 +53,9 @@ function App() {
       {/* <UpdateObjectExample /> */}
 
       {/* Update arrays in state */}
-      <UpdateArraysExample />
+      {/* <UpdateArraysExample /> */}
+
+      
     </div>
   );
 }
