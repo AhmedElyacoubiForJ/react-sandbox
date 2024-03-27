@@ -10,6 +10,7 @@ import QRCodeGenarator from "./freeCodeMapMinis/components/qr-code-generator";
 import LightDarkMode from "./freeCodeMapMinis/components/light-dark-mode";
 import FunctionUpdaterExample from "./BroCode/components/updater-functions";
 import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
+import UpdateArraysExample from "./BroCode/components/update-arrays-in-state";
 
 function App() {
   return (
@@ -49,7 +50,10 @@ function App() {
       {/* <FunctionUpdaterExample /> */}
 
       {/* Update objects in state */}
-      <UpdateObjectExample />
+      {/* <UpdateObjectExample /> */}
+
+      {/* Update arrays in state */}
+      <UpdateArraysExample />
     </div>
   );
 }
