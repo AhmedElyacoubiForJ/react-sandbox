@@ -1,26 +1,26 @@
 import "./App.css";
 
-import Accordian from "./freeCodeMapMinis/components/accordian";
-import ImageSlider from "./freeCodeMapMinis/components/image-slider";
-import { LoadMoreData } from "./freeCodeMapMinis/components/load-more-data";
-import RandomColor from "./freeCodeMapMinis/components/random-color";
-import StarRating from "./freeCodeMapMinis/components/start-rating";
-import TreeView from "./freeCodeMapMinis/components/tree-view";
-import menus from "./freeCodeMapMinis/components/tree-view/data";
-import QRCodeGenarator from "./freeCodeMapMinis/components/qr-code-generator";
+// import Accordian from "./freeCodeMapMinis/components/accordian";
+// import ImageSlider from "./freeCodeMapMinis/components/image-slider";
+// import { LoadMoreData } from "./freeCodeMapMinis/components/load-more-data";
+// import RandomColor from "./freeCodeMapMinis/components/random-color";
+// import StarRating from "./freeCodeMapMinis/components/start-rating";
+// import TreeView from "./freeCodeMapMinis/components/tree-view";
+// import menus from "./freeCodeMapMinis/components/tree-view/data";
+// import QRCodeGenarator from "./freeCodeMapMinis/components/qr-code-generator";
 import LightDarkMode from "./freeCodeMapMinis/components/light-dark-mode";
 
-import FunctionUpdaterExample from "./BroCode/components/updater-functions";
-import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
-import UpdateArraysExample from "./BroCode/components/update-arrays-in-state";
-import UpdateArrayOfObjects from "./BroCode/components/update-array-of-objects-in-state";
-import CardComponentExample from "./BroCode/components/card-components";
-import ToDoListExample from "./BroCode/components/to-do-list";
-import UseEffectExample from "./BroCode/components/use-effect-hook";
-//import DigitalClock from "./BroCode/components/digital-clock";
-import UseContextExample from "./BroCode/components/use-context-hook";
-import UseRefExample from "./BroCode/components/use-ref";
-import StopWatch from "./BroCode/components/stop-watch";
+// import FunctionUpdaterExample from "./BroCode/components/updater-functions";
+// import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
+// import UpdateArraysExample from "./BroCode/components/update-arrays-in-state";
+// import UpdateArrayOfObjects from "./BroCode/components/update-array-of-objects-in-state";
+// import CardComponentExample from "./BroCode/components/card-components";
+// import ToDoListExample from "./BroCode/components/to-do-list";
+// import UseEffectExample from "./BroCode/components/use-effect-hook";
+// import DigitalClock from "./BroCode/components/digital-clock";
+// import UseContextExample from "./BroCode/components/use-context-hook";
+// import UseRefExample from "./BroCode/components/use-ref";
+// import StopWatch from "./BroCode/components/stop-watch";
 
 function App() {
   return (
@@ -44,12 +44,12 @@ function App() {
 
       {/* Tree view component / menu UI component / recursive navigation menu */}
       {/* <TreeView menus= {menus} /> */}
-      
+
       {/* QR code generator */}
       {/* <QRCodeGenarator /> */}
 
       {/* light and dark theme switcher */}
-      {/* <LightDarkMode /> */}
+      <LightDarkMode />
 
       {/* ************************************************************ */}
 
@@ -71,7 +71,7 @@ function App() {
       {/* <CardComponentExample />
           <CardComponentExample />
           <CardComponentExample /> */}
-      
+
       {/* To Do List */}
       {/*  <ToDoListExample /> */}
 
@@ -81,7 +81,7 @@ function App() {
       {/* Digital Clock */}
       {/*   <DigitalClock />
         <DigitalClock /> */}
-      
+
       {/* useContext Hook */}
       {/* <UseContextExample /> */}
 
