@@ -1,4 +1,5 @@
 import "./App.css";
+
 import Accordian from "./freeCodeMapMinis/components/accordian";
 import ImageSlider from "./freeCodeMapMinis/components/image-slider";
 import { LoadMoreData } from "./freeCodeMapMinis/components/load-more-data";
@@ -16,6 +17,7 @@ import UpdateArrayOfObjects from "./BroCode/components/update-array-of-objects-i
 import CardComponentExample from "./BroCode/components/card-components";
 import ToDoListExample from "./BroCode/components/to-do-list";
 import UseEffectExample from "./BroCode/components/use-effect-hook";
+import DigitalClock from "./BroCode/components/digital-clock";
 
 function App() {
   return (
@@ -71,7 +73,10 @@ function App() {
       {/*  <ToDoListExample /> */}
 
       {/* useEffect */}
-      <UseEffectExample />
+      {/* <UseEffectExample /> */}
+
+      {/* Digital Clock */}
+        <DigitalClock />
     </div>
   );
 }
