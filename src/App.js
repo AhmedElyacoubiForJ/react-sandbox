@@ -89,7 +89,7 @@ function App() {
       {/* <UseRefExample /> */}
 
       {/* Stopwatch app */}
-      <StopWatch />
+      {/* <StopWatch /> */}
     </div>
   );
 }
