@@ -15,6 +15,7 @@ import UpdateArraysExample from "./BroCode/components/update-arrays-in-state";
 import UpdateArrayOfObjects from "./BroCode/components/update-array-of-objects-in-state";
 import CardComponentExample from "./BroCode/components/card-components";
 import ToDoListExample from "./BroCode/components/to-do-list";
+import UseEffectExample from "./BroCode/components/use-effect-hook";
 
 function App() {
   return (
@@ -67,7 +68,10 @@ function App() {
           <CardComponentExample /> */}
       
       {/* To Do List */}
-      <ToDoListExample />
+      {/*  <ToDoListExample /> */}
+
+      {/* useEffect */}
+      <UseEffectExample />
     </div>
   );
 }
