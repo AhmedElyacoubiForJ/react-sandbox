@@ -17,7 +17,8 @@ import UpdateArrayOfObjects from "./BroCode/components/update-array-of-objects-i
 import CardComponentExample from "./BroCode/components/card-components";
 import ToDoListExample from "./BroCode/components/to-do-list";
 import UseEffectExample from "./BroCode/components/use-effect-hook";
-import DigitalClock from "./BroCode/components/digital-clock";
+//import DigitalClock from "./BroCode/components/digital-clock";
+import UseContextExample from "./BroCode/components/use-context-hook";
 
 function App() {
   return (
@@ -76,7 +77,11 @@ function App() {
       {/* <UseEffectExample /> */}
 
       {/* Digital Clock */}
-        <DigitalClock />
+      {/*   <DigitalClock />
+        <DigitalClock /> */}
+      
+      {/* useContext Hook */}
+      <UseContextExample />
     </div>
   );
 }
