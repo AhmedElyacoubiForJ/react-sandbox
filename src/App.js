@@ -20,6 +20,7 @@ import UseEffectExample from "./BroCode/components/use-effect-hook";
 //import DigitalClock from "./BroCode/components/digital-clock";
 import UseContextExample from "./BroCode/components/use-context-hook";
 import UseRefExample from "./BroCode/components/use-ref";
+import StopWatch from "./BroCode/components/stop-watch";
 
 function App() {
   return (
@@ -85,7 +86,10 @@ function App() {
       {/* <UseContextExample /> */}
 
       {/* useRef */}
-      <UseRefExample />
+      {/* <UseRefExample /> */}
+
+      {/* Stopwatch app */}
+      <StopWatch />
     </div>
   );
 }
