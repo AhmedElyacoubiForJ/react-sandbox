@@ -9,7 +9,8 @@ import "./App.css";
 // import menus from "./freeCodeMapMinis/components/tree-view/data";
 // import QRCodeGenarator from "./freeCodeMapMinis/components/qr-code-generator";
 // import LightDarkMode from "./freeCodeMapMinis/components/light-dark-mode";
-import ScrollIndicator from "./freeCodeMapMinis/components/scroll-indicator";
+// import ScrollIndicator from "./freeCodeMapMinis/components/scroll-indicator";
+import TabsApp from "./freeCodeMapMinis/components/cutom-tabs/tabs-app";
 
 // import FunctionUpdaterExample from "./BroCode/components/updater-functions";
 // import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
@@ -53,7 +54,10 @@ function App() {
       {/*  <LightDarkMode /> */}
 
       {/* Scroll Indicator */}
-      <ScrollIndicator url="https://dummyjson.com/products?limit=100" />
+      {/* <ScrollIndicator url="https://dummyjson.com/products?limit=100" /> */}
+
+      {/* Custom Tabs */}
+      <TabsApp />
 
       {/* ************************************************************ */}
 
