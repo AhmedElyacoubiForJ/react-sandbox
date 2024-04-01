@@ -12,7 +12,8 @@ import "./App.css";
 // import ScrollIndicator from "./freeCodeMapMinis/components/scroll-indicator";
 // import TabsApp from "./freeCodeMapMinis/components/cutom-tabs/tabs-app";
 // import ModalTest from "./freeCodeMapMinis/components/custom-modal-popup/modal-test";
-import GithubProfileFinder from "./freeCodeMapMinis/components/githup-profile-finder";
+// import GithubProfileFinder from "./freeCodeMapMinis/components/githup-profile-finder";
+import SearchAutocomplete from "./freeCodeMapMinis/components/search-autocomplete-with-api";
 
 // import FunctionUpdaterExample from "./BroCode/components/updater-functions";
 // import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
@@ -65,7 +66,10 @@ function App() {
       {/* <ModalTest /> */}
 
       {/* Githup profile finder */}
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
+
+      {/* Search Autocomplete */}
+      <SearchAutocomplete />
 
       {/* ************************************************************ */}
 
