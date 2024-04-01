@@ -13,7 +13,8 @@ import "./App.css";
 // import TabsApp from "./freeCodeMapMinis/components/cutom-tabs/tabs-app";
 // import ModalTest from "./freeCodeMapMinis/components/custom-modal-popup/modal-test";
 // import GithubProfileFinder from "./freeCodeMapMinis/components/githup-profile-finder";
-import SearchAutocomplete from "./freeCodeMapMinis/components/search-autocomplete-with-api";
+// import SearchAutocomplete from "./freeCodeMapMinis/components/search-autocomplete-with-api";
+import TicTacToe from "./freeCodeMapMinis/components/tic-tac-toe";
 
 // import FunctionUpdaterExample from "./BroCode/components/updater-functions";
 // import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
@@ -69,7 +70,10 @@ function App() {
       {/* <GithubProfileFinder /> */}
 
       {/* Search Autocomplete */}
-      <SearchAutocomplete />
+      {/* <SearchAutocomplete /> */}
+
+      {/* Tic tac toe */}
+      <TicTacToe />
 
       {/* ************************************************************ */}
 
