@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import "./styles.css";
 
@@ -8,14 +8,45 @@ export default function TicTacToe() {
   // 6 7 8
   const [squares, setSquares] = useState(Array(9).fill(""));
   const [isXTurn, setIsXTurn] = useState(true);
+  const [status, setStatus] = useState("");
 
   function handleClick(index) {
     let squaresCopy = [...squares];
-    if (squaresCopy[index] === "") {
-      squaresCopy[index] = isXTurn ? "X" : "O";
-      setSquares(squaresCopy);
-      setIsXTurn(!isXTurn);
+
+    if (getWinner(squaresCopy) || squaresCopy[index]) return;
+
+    squaresCopy[index] = isXTurn ? "X" : "O";
+    setSquares(squaresCopy);
+    setIsXTurn(!isXTurn);
+  }
+
+  function handleRestart() {
+    setSquares(Array(9).fill(""));
+    setIsXTurn(true);
+  }
+
+  function getWinner(squares) {
+    const winnersPattern = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+    ];
+    for (let i = 0; i < winnersPattern.length; i++) {
+      const [a, b, c] = winnersPattern[i];
+      if (
+        squares[a] &&
+        squares[a] === squares[b] &&
+        squares[a] === squares[c]
+      ) {
+        return squares[a];
+      }
     }
+    return null;
   }
 
   function Square({ value, onClick }) {
@@ -25,7 +56,18 @@ export default function TicTacToe() {
       </button>
     );
   }
-  console.log(squares);
+
+  useEffect(() => {
+    const winner = getWinner(squares);
+    if(!winner && squares.every(item => item !== '') ) {
+      setStatus('This is a draw! Please restart the game!');
+    } else if(winner) {
+      setStatus(`Winner is ${winner}, Please restart the game!`);
+    } else {
+      setStatus(`Next player is ${isXTurn? 'X' : 'O'}`);
+    }
+  }, [squares, isXTurn]);
+
   return (
     <div className="tic-tac-toe-container">
       <div className="row">
@@ -43,6 +85,8 @@ export default function TicTacToe() {
         <Square value={squares[7]} onClick={() => handleClick(7)} />
         <Square value={squares[8]} onClick={() => handleClick(8)} />
       </div>
+      <h1>{status}</h1>
+      <button onClick={handleRestart} >Restart</button>
     </div>
   );
 }
