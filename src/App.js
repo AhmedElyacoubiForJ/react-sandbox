@@ -14,7 +14,8 @@ import "./App.css";
 // import ModalTest from "./freeCodeMapMinis/components/custom-modal-popup/modal-test";
 // import GithubProfileFinder from "./freeCodeMapMinis/components/githup-profile-finder";
 // import SearchAutocomplete from "./freeCodeMapMinis/components/search-autocomplete-with-api";
-import TicTacToe from "./freeCodeMapMinis/components/tic-tac-toe";
+// import TicTacToe from "./freeCodeMapMinis/components/tic-tac-toe";
+import FeatureFlags from "./freeCodeMapMinis/components/feature-flag";
 
 // import FunctionUpdaterExample from "./BroCode/components/updater-functions";
 // import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
@@ -73,7 +74,10 @@ function App() {
       {/* <SearchAutocomplete /> */}
 
       {/* Tic tac toe */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+
+      {/* Feature Flag IMplementation */}
+      <FeatureFlags />
 
       {/* ************************************************************ */}
 
