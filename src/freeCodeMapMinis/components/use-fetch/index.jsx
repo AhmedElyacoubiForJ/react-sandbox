@@ -10,7 +10,7 @@ export default function useFetch(url, options = {}) {
     try {
       setPending(true);
       const response = await fetch(url, { ...options });
-      if(!response.ok) throw new Error(response.statusText);
+      if (!response.ok) throw new Error(response.statusText);
 
       const result = await response.json();
 
