@@ -17,7 +17,7 @@ import "./App.css";
 // import TicTacToe from "./freeCodeMapMinis/components/tic-tac-toe";
 // import FeatureFlags from "./freeCodeMapMinis/components/feature-flag";
 // import FeatureFlagGlobalState from "./freeCodeMapMinis/components/feature-flag/context";
-import UseFetchHookTest from "./freeCodeMapMinis/components/use-fetch";
+import UseFetchHookTest from "./freeCodeMapMinis/components/use-fetch/test";
 
 // import FunctionUpdaterExample from "./BroCode/components/updater-functions";
 // import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
@@ -84,7 +84,7 @@ function App() {
       </FeatureFlagGlobalState> */}
 
       {/* useFetch - Custom Hook Test */}
-      {/* <UseFetchHookTest/> */}
+      <UseFetchHookTest />
 
       {/* ************************************************************ */}
 
