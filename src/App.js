@@ -16,6 +16,7 @@ import "./App.css";
 // import SearchAutocomplete from "./freeCodeMapMinis/components/search-autocomplete-with-api";
 // import TicTacToe from "./freeCodeMapMinis/components/tic-tac-toe";
 import FeatureFlags from "./freeCodeMapMinis/components/feature-flag";
+import FeatureFlagGlobalState from "./freeCodeMapMinis/components/feature-flag/context";
 
 // import FunctionUpdaterExample from "./BroCode/components/updater-functions";
 // import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
@@ -77,7 +78,9 @@ function App() {
       {/* <TicTacToe /> */}
 
       {/* Feature Flag IMplementation */}
-      <FeatureFlags />
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
 
       {/* ************************************************************ */}
 
