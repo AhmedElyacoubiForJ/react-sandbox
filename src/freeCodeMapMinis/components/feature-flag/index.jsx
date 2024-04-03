@@ -7,6 +7,7 @@ import RandomColor from "../random-color";
 import Accordian from "../accordian";
 import TreeView from "../tree-view";
 import menus from "../tree-view/data";
+import TabsApp from "../cutom-tabs/tabs-app";
 
 export default function FeatureFlags() {
   const { loading, enabledFlags } = useContext(FeatureFlagsContext);
@@ -31,7 +32,10 @@ export default function FeatureFlags() {
     {
       key: "showTreeView",
       component: <TreeView menus={menus} />,
-    },
+    },{
+        key: "showTabs",
+        component: <TabsApp />,
+      },
   ];
 
   function checkEnabledFlags(getCurrentKey) {
