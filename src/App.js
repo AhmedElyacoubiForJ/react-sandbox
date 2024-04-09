@@ -17,8 +17,8 @@ import "./App.css";
 // import TicTacToe from "./freeCodeMapMinis/components/tic-tac-toe";
 // import FeatureFlags from "./freeCodeMapMinis/components/feature-flag";
 // import FeatureFlagGlobalState from "./freeCodeMapMinis/components/feature-flag/context";
-//import UseFetchHookTest from "./freeCodeMapMinis/components/use-fetch/test";
-import UseOnclickOutsideTest from "./freeCodeMapMinis/components/use-outside-click/test";
+// import UseFetchHookTest from "./freeCodeMapMinis/components/use-fetch/test";
+// import UseOnclickOutsideTest from "./freeCodeMapMinis/components/use-outside-click/test";
 
 // import FunctionUpdaterExample from "./BroCode/components/updater-functions";
 // import UpdateObjectExample from "./BroCode/components/update-objects-in-state";
@@ -32,9 +32,18 @@ import UseOnclickOutsideTest from "./freeCodeMapMinis/components/use-outside-cli
 // import UseRefExample from "./BroCode/components/use-ref";
 // import StopWatch from "./BroCode/components/stop-watch";
 
+import ToDoApp from "./PedroTech/todo-crud";
+
 function App() {
   return (
     <div className="App">
+      {/* Pedro Tech */}
+      <ToDoApp />
+
+
+
+
+
       {/* Build 25 React Mini Projects */}
 
       {/* Accordian component */}
@@ -88,7 +97,7 @@ function App() {
       {/* <UseFetchHookTest /> */}
 
       {/* Use Onclick Outside Hook Test */}
-      <UseOnclickOutsideTest/>
+      {/* <UseOnclickOutsideTest/> */}
 
       {/* ************************************************************ */}
 
