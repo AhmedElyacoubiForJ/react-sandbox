@@ -32,13 +32,18 @@ import "./App.css";
 // import UseRefExample from "./BroCode/components/use-ref";
 // import StopWatch from "./BroCode/components/stop-watch";
 
-import ToDoApp from "./PedroTech/todo-crud";
+// import ToDoApp from "./PedroTech/todo-crud";
+
+import OutletExampleApp from "./code/router-dom-outlet/OutletExampleApp"
 
 function App() {
   return (
     <div className="App">
+      {/* code */}
+      <OutletExampleApp />
+
       {/* Pedro Tech */}
-      <ToDoApp />
+      {/*  <ToDoApp /> */}
 
 
 
