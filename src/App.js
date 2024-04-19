@@ -34,20 +34,25 @@ import "./App.css";
 
 // import ToDoApp from "./PedroTech/todo-crud";
 
-import OutletExampleApp from "./code/router-dom-outlet/OutletExampleApp"
+//import OutletExampleApp from "./code/router-dom-outlet/OutletExampleApp"
+
+//import SimpleUseReducer from "./WebDevSimplified/LearnUseReducer/SimpleUseReducer";
+import ComplexUseReducer from "./WebDevSimplified/LearnUseReducer/ComplexUseReducer";
 
 function App() {
   return (
     <div className="App">
+      {/* Web Dev Simplified */}
+      {/* use reducer Examples */}
+      {/* <UseReducerExample /> */}
+      <ComplexUseReducer />
+
+
       {/* code */}
-      <OutletExampleApp />
+      {/* <OutletExampleApp /> */}
 
       {/* Pedro Tech */}
       {/*  <ToDoApp /> */}
-
-
-
-
 
       {/* Build 25 React Mini Projects */}
 
