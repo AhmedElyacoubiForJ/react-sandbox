@@ -44,9 +44,8 @@ function App() {
     <div className="App">
       {/* Web Dev Simplified */}
       {/* use reducer Examples */}
-      {/* <UseReducerExample /> */}
+      {/* <SimpleUseReducer /> */}
       <ComplexUseReducer />
-
 
       {/* code */}
       {/* <OutletExampleApp /> */}

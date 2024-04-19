@@ -1,7 +1,7 @@
 import { useReducer, useState } from "react";
 import Todo from "./Todo";
 
-const ACTIONS = {
+export const ACTIONS = {
   ADD_TODO: "add-todo",
   TOGGLE_TODO: "toggle-todo",
   DELETE_TODO: "delete-todo",
@@ -42,13 +42,13 @@ function ComplexUseReducer() {
     setName("");
   }
 
-  function toggleComplete(id) {
+  /* function toggleComplete(id) {
     dispatch({ type: ACTIONS.TOGGLE_TODO, payload: { id: id } });
   }
 
   function onDelete(id) {
     dispatch({ type: ACTIONS.DELETE_TODO, payload: { id: id } });
-  }
+  } */
 
   return (
     <>
@@ -60,12 +60,7 @@ function ComplexUseReducer() {
         />
       </form>
       {todos.map((todo) => (
-        <Todo
-          todo={todo}
-          key={todo.id}
-          toggleComplete={toggleComplete}
-          onDelete={onDelete}
-        />
+        <Todo todo={todo} key={todo.id} dispatch={dispatch} />
       ))}
     </>
   );
