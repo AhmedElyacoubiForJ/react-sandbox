@@ -33,6 +33,7 @@ import "./App.css";
 // import StopWatch from "./BroCode/components/stop-watch";
 
 // import ToDoApp from "./PedroTech/todo-crud";
+import ComponetLifecycleExample from "./PedroTech/ComponentLifeCycle";
 
 //import OutletExampleApp from "./code/router-dom-outlet/OutletExampleApp"
 
@@ -47,9 +48,9 @@ function App() {
   return (
     <div className="App">
       {/* Cosden Solutions */}
-      <Provider store={store}>
+     {/*  <Provider store={store}>
         <ReduxTutorial />
-      </Provider>
+      </Provider> */}
 
 
       {/* Web Dev Simplified */}
@@ -62,6 +63,9 @@ function App() {
 
       {/* Pedro Tech */}
       {/*  <ToDoApp /> */}
+
+      {/* componentLifeCycle */}
+      <ComponetLifecycleExample />
 
       {/* Build 25 React Mini Projects */}
 
