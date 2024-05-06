@@ -37,15 +37,25 @@ import "./App.css";
 //import OutletExampleApp from "./code/router-dom-outlet/OutletExampleApp"
 
 //import SimpleUseReducer from "./WebDevSimplified/LearnUseReducer/SimpleUseReducer";
-import ComplexUseReducer from "./WebDevSimplified/LearnUseReducer/ComplexUseReducer";
+//import ComplexUseReducer from "./WebDevSimplified/LearnUseReducer/ComplexUseReducer";
+
+import { Provider } from "react-redux";
+import ReduxTutorial from "./CosdenSolutions/redux-tutorial";
+import { store } from "./CosdenSolutions/state/store.ts";
 
 function App() {
   return (
     <div className="App">
+      {/* Cosden Solutions */}
+      <Provider store={store}>
+        <ReduxTutorial />
+      </Provider>
+
+
       {/* Web Dev Simplified */}
       {/* use reducer Examples */}
       {/* <SimpleUseReducer /> */}
-      <ComplexUseReducer />
+     {/*  <ComplexUseReducer /> */}
 
       {/* code */}
       {/* <OutletExampleApp /> */}
